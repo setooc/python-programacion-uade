@@ -1,0 +1,33 @@
+# Segundo parcial - Tema 1, Ejercicio 1
+
+try:
+    buscar = input("Palabra a eliminar? ")
+    entrada = open("texto.txt","rt")
+    salida = open("texto2.txt","wt")
+    borradas = 0
+    for linea in entrada:
+        # Se busca sobre una lista y se elimina sobre la cadena.
+        # Esto se hace para evitar falsos positivos (eliminar "venta" de "inventario" )
+        lista = linea.split()
+        while buscar in lista:
+            inicio = linea.find(buscar)
+            final = inicio+len(buscar)
+            # Si luego de la palabra hay un espacio, también lo eliminamos
+            if linea[final]==" ":
+                final = final+1
+            linea = linea[:inicio]+linea[final:]
+            borradas = borradas + 1
+            # Borramos de la lista la palabra eliminada para seguir buscándola
+            lista.remove(buscar)
+        salida.write(linea)
+except IOError as error:
+     print("Error de archivos:", error)
+else:
+     print("Proceso finalizado.")
+     print("La palabra '", buscar, "' fue eliminada ",borradas ," veces.", sep="")
+finally:
+     try:
+         entrada.close()
+         salida.close()
+     except NameError:
+         pass

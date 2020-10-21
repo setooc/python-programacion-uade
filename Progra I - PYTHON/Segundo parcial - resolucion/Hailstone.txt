@@ -1,0 +1,15 @@
+# Segundo Parcial - Tema 2, Ejercicio 2
+
+def hailstone(n):
+    if n>1:
+        print(n, end=" ")
+        if n%2==0:
+            hailstone(n//2)
+        else:
+            hailstone(n*3+1)
+    else:
+        print(n)
+
+# Programa principal
+n = int(input("Valor inicial? "))
+hailstone(n)

@@ -1,0 +1,18 @@
+# Simulacro Primer parcial (No se permite el uso de facilidades no vistas en clases)
+
+# 1. Una oficina cuneta con dos cajas fuerte cuyas claves son numericas y de 4 cifras
+# Para evitar extraviarlas kas combino fomando un solo numero de 8 digitos, en el que las posiciones impares
+# corresponden a una de las cajas y las pares a la otra.
+# Desarrollar un programa para ingresar la clave combinada y mostar por pantalla ambos codigo de forma individual.
+# por ejemplo se ingresa 15263748 debera mostrarse 1234 y 5678
+
+# 2. Desarrollar un programa para ingresar un numero entero N, impart y no menor que 3.
+# Rechazar le numero y vlverlo a ingresar si no se cumplen estas condiciones
+# Luego solicita imprimir el borde de un triangulo centrado con N filas, tal como se muestra a continuacion
+
+
+#         *
+#        * *
+#       *   *
+#      *     *
+#     *********

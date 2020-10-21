@@ -1,0 +1,99 @@
+CLase 1
+
+Python oficial de python.org
+Anaconda Python
+WinPython
+Python (x,y)
+ActivePython
+Pydroid (Android)
+
+Es de alto nivel = esta cerca de las personas y lejos de la cpu
+
+Es un lenguaje que se interpreta no se compila. Es decir que no se traduce
+
+los programas compilados corren mas rapidos que los interpretados.
+
+Es multiparadigma (
+
+print ("Hola Mundo", end =" ") separados por espacios
+
+dia = 5
+print ("Hoy es ", dia)
+
+print("%4d" %a)
+
+print("El valor es %4d" %a) no va coma ojo tengo 3 espacios en blanco y en el cuarto sale el caracter
+
+pi=3.1416
+print("%5.2f"%pi) ojo se ve _3.14 son 5 columnas en total
+
+usamos imput para meter por teclado
+a= input("mensaje") input siempre devuelve un string
+
+n=int(input("mensaje")) castear
+
+// division entera
+** potenciacion
+
+elifi:(condificon)
+
+if a<b>c
+if a<b and b>c:
+
+<valor> = <valor1> if <condicion> else <valor2>
+
+a = b if b>=0 else -b
+
+switch no exite en python
+hacemos 
+if
+elif
+elif
+elif
+else
+
+while <condicion> :
+
+aca si usamos BREAK y se usa dentro de un ciclo
+
+al while se l epuede poner ELSE y solo se cumple cuando el while da falsa la condicion. Si sale por un break el else me lo meto en el orto
+
+ejemplo
+n=int(input("ingrese un numero"))
+i=2
+  while i<n:
+  if n % i == 0:
+     print(n,"no es un numero primo")
+     break
+  i=i+1
+else:
+   print(n, "es un numero primo")
+
+instruccion continue - inciar una nueva iteracion sin haber terminado la anterior (osea te vuelve arriba a checkear la condicion)
+
+x=-6
+while x<5:
+	x=x+1
+	if x==0:
+		continue
+	print("%2d: %5.2f" %(x,1/x))
+
+for <variable> in <secuencia>:
+
+usamos range() 
+ - un solo formato range(<vfinal>) valor final va entre 0 y vfinal(pero sin incluir vfinal)
+ - dos parametrso, range(<vinicial>, <vfinal>)
+ - range (viniicial, vfinal, vinc) vincremento va subiendo o bajando
+
+ejemploç
+n=int(input("ingrese un numero"))
+for i in range(1, n+1, 2):
+	print(i, end="")
+print()
+
+
+
+
+
+
+
